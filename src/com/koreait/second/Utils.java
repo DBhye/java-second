@@ -81,13 +81,4 @@ public class Utils {
 	}
 	
 	
-	public static String makeStarTriangle (int star) {
-	
-		for(int i=0; i<star; i++) {
-			System.out.println("");
-			for(int z=0; z<=i; z++) {
-				System.out.print("*");
-			}
-		} 
-	}
 }
