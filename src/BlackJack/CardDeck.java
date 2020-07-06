@@ -10,16 +10,27 @@ public class CardDeck {
 
 	public CardDeck() {
 		init();
+		
 	}
 
 	private void init() {
+		
 		for (int i = 0; i < Card.PATTERNS.length; i++) {
 			for (int z = 1; z < 13; z++) {
-				arr.add(new Card(Card.PATTERNS[i], getDeno(z)));
+				//arr.add(new Card(Card.PATTERNS[i], getDeno(z)));
+				String pattern = Card.PATTERNS[i];
+				String deno = getDeno(z);
+				int point = getPoint(z);
+					
+				Card c = new Card(pattern, deno, point);
+				arr.add(c);
 			}
 		}
 	}
-
+	private int getPoint(int num) {
+		return num > 10 ? 10 : num;
+	}
+	
 	private String getDeno(int num) {
 		switch (num) {
 		case 1:
