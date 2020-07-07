@@ -26,7 +26,7 @@ public class Card {
 
 	@Override
 	public String toString() {
-		return String.format("p: %s, d: %s, p: %d"
+		return String.format("모양: %s, 숫자: %s, 점수: %d"
 				, pattern, denomination,point);
 	}
 	
