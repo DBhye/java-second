@@ -72,8 +72,13 @@ public class CardDeck {
 }
 
 /*
- * for(int i=0; i<Card.PATTERN.length; i++) { for(int z=1; z<=13; z++) {
- * arr.add(new Card(Card.PATTERN[i], getDeno(z))); String pattern =
- * Card.PATTERNS[i]; String deno = getDeno(z); Card c = new Card(pattern,deno);
+ * for(int i=0; i<Card.PATTERN.length; i++) *{ 
+ * for(int z=1; z<=13; z++) {
+ * arr.add(new Card(Card.PATTERN[i], getDeno(z))); 
+ * String pattern =Card.PATTERNS[i]; 
+ * String deno = getDeno(z); 
+ * 	}
+ * Card c = new Card(pattern,deno);
  * arr.add(c);
+ * }
  */
