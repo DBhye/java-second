@@ -8,11 +8,24 @@ public class Cafe {
 		//System.out.println(mi2);
 		
 		
-		Menu menu = new Menu();
-		menu.showMenus();
+		//Menu menu = new Menu();
+		//menu.showMenus();
 		
-		MenuItem mi = menu.choose(0);
-		System.out.println(mi);
+		//MenuItem mi = menu.choose(0);
+		//System.out.println(mi);
+		
+		Customer cus = new Customer();
+		Menu menu = new Menu();
+		Barista bas = new Barista();
+		
+		MenuItem mi = cus.order(menu);
+		//System.out.println(mi);
+		
+		
+		MenuItem choiceMenu = cus.order(menu);
+		Coffee coffee = bas.makeCoffee(choiceMenu);
+		//주문받은 메뉴 확인
+		//만들어서 리턴
 		
 	}
 }

@@ -20,6 +20,6 @@ public class MenuItem {
 	}
 	@Override
 	public String toString() {
-		return String.format("메뉴 이름: %s\n 가격: %d",name,price);
+		 return String.format("메뉴 이름: %s\n 가격: %d",name,price);
 	}
 }
