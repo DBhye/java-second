@@ -27,4 +27,11 @@ public class Customer {
 		scan.close();
 		return mi;
 	}
+	
+	public void drinkCoffee (Coffee coffee) {
+		
+		String name = coffee.getName();
+		
+		System.out.printf("%s를 마십니다.",name);
+	}
 }

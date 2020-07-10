@@ -18,7 +18,7 @@ public class Cafe {
 		Menu menu = new Menu();
 		Barista bas = new Barista();
 		
-		MenuItem mi = cus.order(menu);
+		//MenuItem mi = cus.order(menu);
 		//System.out.println(mi);
 		
 		
@@ -26,6 +26,8 @@ public class Cafe {
 		Coffee coffee = bas.makeCoffee(choiceMenu);
 		//주문받은 메뉴 확인
 		//만들어서 리턴
+		
+		cus.drinkCoffee(coffee);
 		
 	}
 }

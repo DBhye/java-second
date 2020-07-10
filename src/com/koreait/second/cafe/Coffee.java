@@ -8,4 +8,20 @@ public class Coffee {
 		name = item.getName();
 		price = item.getPrice();
 	}
+
+	public int getPrice() {
+		return price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
 }
